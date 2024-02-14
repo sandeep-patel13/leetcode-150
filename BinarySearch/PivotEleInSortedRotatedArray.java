@@ -1,7 +1,7 @@
 public class PivotEleInSortedRotatedArray {
     public static void main(String[] args) {
         
-        int[] arr = new int[] {15, 20, 25, 30, 5, 6, 7, 8};
+        int[] arr = new int[] {15, 20, 25, 30, 5, 6, 7 , 8 , 9 , 10 , 12};
 
         int start = 0 , end = arr.length - 1 , mid = 0;
 
@@ -28,7 +28,7 @@ public class PivotEleInSortedRotatedArray {
             // jab pivot milega tab dekhna tum abhi bhi array ke SECOND HALF me hi ho 
             else {
 
-                end = mid - 1;
+                end = mid;
 
             }
 

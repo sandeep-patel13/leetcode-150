@@ -1,0 +1,20 @@
+Tree 
+====
+
+1 - Tree is a Non Linear Data Structure.
+
+2 - Here one node can be connected with multiple node.
+
+3 - Binary Tree : Binary Tree is a type of Tree Data Structure in which a Single node can have <= 2 nodes.
+
+4 - Root Node : Root node is a Starting point of Tree OR top node of the tree.
+
+5 - Sibling Node : Nodes which have same Parent node are called Sibling node.
+
+6 - Ancestor : All the Nodes which are above a particular node OR all the node which are direct or indirect parent node of a particular node.
+
+7 - Descendent : All the Nodes which are at bottom of a particular node OR all the nodes which are direct or indirect child node of a particular node.
+
+8 - Lead Node : A node which has no child or 0 Child.
+
+9 - Node : Node is a Structure where 3 values are presented a. data b. left node address c. right node address. 

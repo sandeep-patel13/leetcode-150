@@ -1,7 +1,7 @@
 public class ComplementOfBase10Integer {
     public static void main(String[] args) {
         
-        int num = 15;
+        int num = 5;
         int mask = 0;
         int num1 = num;
 
@@ -9,7 +9,7 @@ public class ComplementOfBase10Integer {
         if(num == 0){
             System.out.println(1);
             return;
-        }
+        } 
 
         while (num1 != 0) {
 

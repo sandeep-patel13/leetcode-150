@@ -218,6 +218,7 @@ public class LinkedListDS {
             temp = temp.next;
         }
         System.out.println(temp.data);
+        
     }
 
     void findMiddleWay3(Node slow , Node fast) {
@@ -286,8 +287,6 @@ public class LinkedListDS {
             set.add(temp.data);
             temp = temp.next;
         }
-
-
 
         System.out.println("not circular....");
 
@@ -422,7 +421,6 @@ public class LinkedListDS {
             temp = temp.next;
         }
 
-        System.out.println(Arrays.toString(counting));
         temp = head;
         int i = 0;
         while(i < counting.length) {
@@ -577,8 +575,8 @@ public class LinkedListDS {
                 c1 = c1.next;
                 c2 = n2;
 
-            }
 
+            }
             else {
 
                 // update window (c1 , n1)
@@ -801,7 +799,7 @@ public class LinkedListDS {
             
         }
 
-         // 3. check for remaining node in first list 
+         // 3. check for remaining node in second list 
         while(temp2 != null) {
 
             int val = temp2.data;
@@ -821,7 +819,6 @@ public class LinkedListDS {
 
         }
         
-        System.out.println("//////////");
         answer.print();
     }
     

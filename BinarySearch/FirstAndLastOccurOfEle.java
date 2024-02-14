@@ -44,6 +44,48 @@ public class FirstAndLastOccurOfEle {
         
     }
 
+    public static int[] firstAndLastPositionWay1(ArrayList<Integer> arr , int n , int k) {
+
+        int fp = -1 , lp = -1;
+
+        boolean flag = false;
+
+        for(int i = 0 ; i < n ; i++) {
+
+            // get ele 
+            int x = arr.get(i);
+
+            // check 
+            if(x != k)
+                continue;
+
+            // x == k 
+            if(flag == false) {
+                fp = i;
+                flag = true;
+            }
+
+            lp = i;
+
+        }
+
+        int[] ans = new int[2];
+        ans[0] = fp;
+        ans[1] = lp;
+
+        return ans;
+
+    }
+
+    public static int[] firstAndLastPositionWay2(ArrayList<Integer> arr, int n, int k) {
+
+        int[] ans = new int[2];
+        ans[0] = arr.indexOf(k);
+        ans[1] = arr.lastIndexOf(k);
+        return ans;
+
+    }
+
     public static int[] firstAndLastPosition(ArrayList<Integer> arr, int n, int k) {
         
         int index = BinarySearch(arr, n, k);
@@ -97,7 +139,10 @@ public class FirstAndLastOccurOfEle {
         arr.add(2);
         arr.add(2);
         
-        int[] ans = firstAndLastPosition(arr, arr.size(), 2);
+        // int[] ans = firstAndLastPosition(arr, arr.size(), 2);
+        // int[] ans = firstAndLastPositionWay1(arr, arr.size(), 2);
+        int[] ans = firstAndLastPositionWay2(arr, arr.size(), 2);
+
 
         for(int i : ans) {
 

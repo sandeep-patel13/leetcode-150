@@ -1,6 +1,34 @@
 
 public class SquareRootUsingBinarySearch {
 
+    public static int brootForce(int n) {
+
+        int ans = -1;
+
+        for (int i = 0 ; i < n ; i++) {
+
+            int square = i * i;
+
+            if(square == n) {
+                ans = i;
+                break;
+            }
+
+            else if(square < n)
+                ans = i;
+            
+            else 
+                break;
+
+        }
+
+        return ans;
+    }
+
+    public static double usingMethod(double n) {
+        return Math.sqrt(n);
+    }
+
     public static int squareRoot(int n) {
 
         long start = 0 , end = n , mid = 0 , squareRoot = -1;
@@ -20,7 +48,7 @@ public class SquareRootUsingBinarySearch {
 
             // means square abhi bhi small hai n se,
             // so we need to go to right part,
-            // kyuki wahi badi vaklues hai 
+            // kyuki wahi badi values hai 
             if (square < n) {
 
                 // ye ek possible answer(floor value) hai 
@@ -62,11 +90,11 @@ public class SquareRootUsingBinarySearch {
 
     public static void main(String[] args) {
         
-        int n = 100000;
-        int squareRoot = squareRoot(n);
+        int n = 10;
+        double squareRoot = usingMethod(n);
         System.out.println(squareRoot);
-        double squareRootWithPrecesion = squareRootWithPrecision(squareRoot, 3, n);
-        System.out.print(String.format("%.3f",squareRootWithPrecesion));
+        // double squareRootWithPrecesion = squareRootWithPrecision(squareRoot, 3, n);
+        // System.out.print(String.format("%.3f",squareRootWithPrecesion));
 
     }
 }

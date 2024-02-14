@@ -1,6 +1,29 @@
+// BINARY SEARCH + I     +      II
+//                 |             |
+//                 |             |
+//             s = mid + 1    e = mid
 
 public class FindPeakElement {
     
+    public static int method2(int[] arr) {
+
+        int ans = -1;
+
+        for(int i = 0 ; i < arr.length-1 ; i++) {
+
+            int x = arr[i];
+
+            if(x > arr[i-1] && x < arr[i+1]) {
+                ans = x;
+                break;
+            }
+
+        }
+
+        return ans;
+
+    }
+
     public static void main(String[] args) {
         
         int[] arr = new int[] {3, 4, 5, 50, 7, 6, 5};
